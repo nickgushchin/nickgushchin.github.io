@@ -24,7 +24,7 @@ Applied AI practitioner in Zurich. 18 years in international banking, then start
 - Jury: The Ventures Award Switzerland 2026, Zurich — jury member for the startup awards (https://www.linkedin.com/posts/nickgushchin_theventures-theventuresswitzerland-startupawards-activity-7442212524755845120-2Q9L).
 
 ## Insights
-- Interviews: Sander Recommends (2026); DDDM.FM with Lukasz Schab, "Managing people — and AI" (Oct 2026, https://lnkd.in/p/eHuDnyxC); Beyond Coding Podcast #177 (Sep 2025).
+- Interviews: Sander Recommends (2026); DDDM.FM with Lukasz Schab, "Managing people — and AI" (Oct 2026, https://lnkd.in/p/eHuDnyxC); Beyond Coding Podcast #177 (Sep 2024).
 - Key ideas: the atomic AI company; the model is not your advantage; tools vs. skills.
 
 ## Contact
