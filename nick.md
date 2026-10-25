@@ -31,3 +31,4 @@ Applied AI practitioner in Zurich. 18 years in international banking, then start
 LinkedIn: https://www.linkedin.com/in/nickgushchin/
 
 - Oct 2025: GICP written interview, "How AI is changing workflows, underwriting and risk in credit": https://gicp.org/careers/rewriting-of-credit-work/
+- Nov 2024: Tech.eu interview by Cate Lawrence, "Unlocking the power of manufacturing data with CloEE", with co-founder Julia Sabitova and Nick as Chief AI Advisor (AI digital advisor for discrete manufacturing, its AI architecture). https://tech.eu/2024/11/20/unlocking-the-power-of-manufacturing-data-with-cloee/
