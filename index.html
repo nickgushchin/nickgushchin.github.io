@@ -81,6 +81,11 @@ details.prev .list{margin-top:10px}
 .tl li.hide{display:none}
 .pf{flex-wrap:wrap;margin:4px 0 8px}.pf+.pf{margin-bottom:18px}.pf .lbl{font:600 11px var(--mono);color:var(--mut);align-self:center;min-width:64px;text-transform:uppercase}
 #lab .proj.hide{display:none}
+.wl{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}.wl-h{display:flex;gap:14px;align-items:baseline}.wl-h .d{font:12px var(--mono);color:var(--mut);width:92px;flex:none}
+#wlf{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}#wlf input[type=email],#wlf input[type=text],#wlf select{font-size:15px;padding:9px 10px;border:1px solid var(--line);background:#fff;min-width:0}
+#wlf .ck{grid-column:1/-1;display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--mut)}#wlf .btn{grid-column:1/-1;justify-self:start;cursor:pointer;border:0}
+#wlf .hp{position:absolute;left:-9999px}.wl-msg{grid-column:1/-1;margin:0!important;font-size:14px}
+@media (max-width:640px){#wlf{grid-template-columns:1fr}}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 16px}.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line);border-radius:10px;display:block}
 @media (max-width:640px){.gallery{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory}.gallery img{scroll-snap-align:start}}#lab .none{display:none;color:var(--mut)}
 /* agent terminal (own page) */
@@ -165,14 +170,25 @@ h3{font:600 17px var(--sans);margin:0 0 4px}
   </div>
 
   <div class="card red"><div>
-    <div class="chips"><span class="chip live">open for sign-up</span><span class="chip">public masterclass</span><span class="chip">EN · 3 hours · no coding</span></div>
+    <div class="chips"><span class="chip live">open for sign-up</span><span class="chip">last one this year</span><span class="chip">public masterclass</span><span class="chip">EN · 3 hours · no coding</span></div>
     <h3>How to set up AI agents with Claude and GPT</h3>
     <p>Build at least one working AI agent on your own use case, live, in three hours.</p>
     <ul class="list">
       <li><span class="d">Wed 11 Nov</span><span class="t">Online, 17:30–20:30</span><a class="btn red" href="https://eventfrog.ch/en/p/courses-seminars/computer-it/how-to-set-up-ai-agents-with-claude-and-gpt-masterclass-7505354593376672370.html">Sign up</a></li>
-      <li><span class="d">Wed 25 Nov</span><span class="t">Online, 17:30–20:30</span><a class="btn red" href="https://eventfrog.ch/en/p/courses-seminars/computer-it/how-to-set-up-ai-agents-with-claude-and-gpt-masterclass-7505355105752889567.html">Sign up</a></li>
-      <li><span class="d">Sat 28 Nov</span><span class="t">In person, Zurich, 13:30–16:30</span><a class="btn red" href="https://eventfrog.ch/en/p/courses-seminars/computer-it/how-to-set-up-ai-agents-with-claude-and-gpt-masterclass-7505355318181817441.html">Sign up</a></li>
     </ul>
+    <div class="wl" id="waitlist">
+      <div class="wl-h"><span class="d">2027</span><b>Next masterclass · Jan–Feb · dates coming soon</b></div>
+      <p class="mini" style="margin:4px 0 10px!important">Join the waiting list and you are the first to get the dates, before they go public.</p>
+      <form id="wlf" novalidate>
+        <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+        <input type="text" name="name" placeholder="Name (optional)" autocomplete="name">
+        <select name="format" aria-label="Preferred format"><option value="either">Online or Zurich</option><option value="online">Online</option><option value="zurich">In person, Zurich</option></select>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <label class="ck"><input type="checkbox" name="consent"> Email me when dates for the next masterclass are open. Nothing else, and I can unsubscribe any time.</label>
+        <button class="btn red" type="submit">Join the waiting list</button>
+        <p class="wl-msg" role="status"></p>
+      </form>
+    </div>
     <details class="prev"><summary>Previous masterclasses</summary>
       <ul class="list"><li><span class="d">21 Mar 2026</span><span class="t">From Banking to AI<small>Zurich, in person</small></span></li></ul>
     </details>
@@ -470,5 +486,12 @@ addEventListener('hashchange',()=>{if(/#\/(agent|contact)/.test(location.hash))l
 document.querySelectorAll('.tl-f:not(.pf) button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tl-f:not(.pf) button').forEach(x=>x.classList.toggle('on',x===b));
  document.querySelectorAll('.tl li').forEach(li=>li.classList.toggle('hide',b.dataset.f!=='all'&&!li.classList.contains(b.dataset.f)))});
 </script>
+<script>(()=>{const f=document.getElementById('wlf');if(!f)return;const m=f.querySelector('.wl-msg');
+f.onsubmit=async e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));d.consent=f.consent.checked;
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email||'')){m.textContent='Please enter a valid email.';return}
+if(!d.consent){m.textContent='Please tick the box so I may email you the dates.';return}
+m.textContent='Sending...';try{const r=await fetch(TWIN.url.replace('/chat','/waitlist'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
+const j=await r.json();if(j.ok){f.innerHTML='<p class="wl-msg">Thank you, you are on the list. You will hear from me as soon as the 2027 dates are set.</p>'}else m.textContent='Something went wrong. Please try again, or message me on LinkedIn.'}
+catch(err){m.textContent='Something went wrong. Please try again, or message me on LinkedIn.'}}})();</script>
 </body>
 </html>

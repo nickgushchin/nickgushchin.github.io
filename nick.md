@@ -3,7 +3,7 @@
 Applied AI practitioner in Zurich. 18 years in international banking, then started over: builds with AI, teaches it, and leads AI transformation in a Swiss industrial company. Founder of Head of AI Club Zurich.
 
 ## Trainings
-- Public masterclass "How to set up AI agents with Claude and GPT" (EN, 3 h, no coding): Wed 11 Nov and Wed 25 Nov 2026 online, Sat 28 Nov 2026 in Zurich. Sign up on Eventfrog.
+- Public masterclass "How to set up AI agents with Claude and GPT" (EN, 3 h, no coding): Wed 11 Nov 2026 online is the last one this year (sign up on Eventfrog). Next masterclass Jan–Feb 2027, dates coming soon: join the waiting list on the Trainings page.
 - Private AI programmes for Executives and leadership teams (1:1, small groups, in-house lectures for 3–15).
 - Digicomp Academy: "IT Service Management und GenAI" (DE, 2 days), next run 10–17 Dec 2026.
 - Private AI trainings for Executives: from CHF 250 per hour (private sessions); formats and prices in the overview PDF https://nickgushchin.github.io/docs/Nick-Gushchin_AI-for-Executives.pdf
