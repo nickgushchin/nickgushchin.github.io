@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Welcome · Masterclass: AI agents with Claude and ChatGPT · 11 Nov 2026</title>
+<meta name="description" content="Participant page for the online masterclass on 11 Nov 2026: topics, schedule, what you leave with, how to prepare, and a 3-minute questionnaire.">
+<meta property="og:title" content="Welcome to the masterclass: AI agents with Claude and ChatGPT">
+<meta property="og:description" content="Wed 11 Nov · 17:30–20:30 Zurich time · online. You leave with your own AI agent running.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://nickgushchin.github.io/masterclass-11-nov/img/og-masterclass-11-nov.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+:root{--bg:#0b0b10;--panel:#141a24;--panel2:#1a2230;--line:#263042;--tx:#eef2f7;--mut:#9fb0c4;--soft:#c9d6e6;
+--blue:#9ad1ff;--yel:#ffd166;--pink:#ff7eb6;--grn:#7cfc9a;--pur:#c4a7ff;--ora:#ffb347;
+--sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.kick{font:700 13px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--c,var(--blue));margin:0 0 10px}
+h2{font:800 clamp(28px,4.4vw,44px)/1.08 var(--sans);letter-spacing:-.02em;margin:0 0 14px}
+h3{font:700 20px/1.25 var(--sans);margin:0 0 6px}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--soft);max-width:60ch;margin:0 0 28px}
+/* glasses dots */
+.dots{display:inline-flex;gap:6px;vertical-align:middle}.dots i{width:10px;height:10px;border-radius:50%;display:block}
+.dots i:nth-child(1){background:var(--blue)}.dots i:nth-child(2){background:var(--grn)}.dots i:nth-child(3){background:var(--pink)}.dots i:nth-child(4){background:var(--ora)}.dots i:nth-child(5){background:var(--yel)}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0;overflow:hidden}
+.hero .bgimg{position:absolute;inset:0;background:url(img/hero-bowler-crowd.jpg) 0% 18%/max(140%,1500px) auto no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,16,.92) 0%,rgba(11,11,16,.7) 38%,rgba(11,11,16,0) 62%),linear-gradient(180deg,rgba(11,11,16,0) 55%,var(--bg) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:14vh;padding-bottom:56px;width:100%}
+.hero .inner{max-width:620px}
+.hero .tag{display:inline-flex;align-items:center;gap:10px;font:700 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;background:rgba(11,11,16,.7);border:1px solid var(--line);padding:7px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font:800 clamp(36px,5.6vw,68px)/1.02 var(--sans);letter-spacing:-.03em;margin:0 0 14px;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.meta span{font:600 15px var(--sans);background:rgba(20,26,36,.85);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.meta b{color:var(--yel)}
+.promise{font:700 clamp(20px,2.8vw,28px)/1.25 var(--sans);margin:0 0 26px;max-width:28ch}
+.promise mark{background:none;color:var(--grn)}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;font:800 clamp(18px,2.3vw,22px)/1.2 var(--sans);color:#0b0b10;background:linear-gradient(90deg,var(--yel),var(--ora));padding:20px 30px;border-radius:16px;box-shadow:0 10px 40px rgba(255,179,71,.28);transition:transform .15s,box-shadow .15s;border:0;cursor:pointer}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(255,179,71,.4)}
+.cta small{font:600 14px var(--sans);opacity:.75}
+.ghost{display:inline-block;margin-left:14px;color:var(--soft);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line);padding:4px 0}
+.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 4px}
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:-10px}
+.facts div{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:14px;padding:14px 16px}
+.facts b{display:block;font:800 26px/1.1 var(--sans);color:var(--c)}
+.facts span{font:13px/1.35 var(--mono);color:var(--mut)}
+/* topics */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.topic{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative;overflow:hidden}
+.topic::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--c)}
+.topic .n{font:700 12px var(--mono);letter-spacing:.1em;color:var(--c);text-transform:uppercase}
+.topic h3{margin-top:6px}
+.topic p{margin:0;color:var(--soft);font-size:15.5px}
+/* takeaways */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.box{border-radius:20px;padding:26px;border:1px solid var(--line);background:var(--panel)}
+.box.prac{background:linear-gradient(160deg,#12261b 0%,var(--panel) 60%);border-color:#24503a}
+.box.theo{background:linear-gradient(160deg,#1f1a33 0%,var(--panel) 60%);border-color:#3b3361}
+.box h3{font-size:24px}.box .sub{color:var(--mut);margin:0 0 16px;font-size:15px}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.items li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;background:rgba(11,11,16,.45);border-radius:12px;padding:12px 14px}
+.items .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font:800 15px var(--mono);color:#0b0b10;background:var(--c)}
+.items b{display:block;font-size:16px}.items span{color:var(--soft);font-size:14.5px}
+/* schedule */
+.tl{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:92px 1fr;gap:16px;background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:14px;padding:16px 18px}
+.row .tm{font:800 22px/1 var(--sans);color:var(--c)}.row .tm small{display:block;font:600 12px var(--mono);color:var(--mut);margin-top:6px}
+.row h3{font-size:18px;margin:0 0 4px}.row h3 span{font:700 12px var(--mono);letter-spacing:.08em;color:var(--c);text-transform:uppercase;display:block;margin-bottom:3px}
+.row p{margin:0;color:var(--soft);font-size:15px}
+.ex{display:inline-block;margin:8px 6px 0 0;font:700 13px var(--sans);background:#1f3b2c;color:var(--grn);border-radius:8px;padding:4px 10px}
+.row.brk{background:#17171c;border-left-color:#555;padding:10px 18px}.row.brk .tm{font-size:18px;color:#aaa}.row.brk p{color:#aaa;align-self:center}
+.bar{display:flex;height:14px;border-radius:999px;overflow:hidden;margin:0 0 8px;border:1px solid var(--line)}
+.bar i{display:block}
+.barlbl{font:13px var(--mono);color:var(--mut);margin:0 0 22px}
+/* prepare */
+.prep{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.prep div{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.prep .no{font:800 30px/1 var(--sans);color:var(--c);display:block;margin-bottom:10px}
+.prep b{display:block;font-size:16.5px;margin-bottom:4px}.prep span{color:var(--soft);font-size:14.5px}
+.note{margin-top:16px;color:var(--mut);font-size:15px;border:1px dashed var(--line);border-radius:12px;padding:12px 16px}
+/* questionnaire */
+#questionnaire{background:radial-gradient(1200px 500px at 20% 0%,#2a2210 0%,transparent 60%),radial-gradient(900px 500px at 100% 30%,#2a1426 0%,transparent 55%)}
+.qgrid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:22px;align-items:start}
+.qcard{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px}
+.side{position:sticky;top:20px;display:grid;gap:10px}
+.side div{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;padding:14px 16px}
+.side b{display:block;font-size:15.5px}.side span{color:var(--soft);font-size:14px}
+.side .st{font:700 12px var(--mono);letter-spacing:.1em;color:var(--c);text-transform:uppercase}
+form{display:grid;gap:18px}
+.f label,.f legend{display:block;font:700 16px var(--sans);margin-bottom:6px;padding:0}
+.f .hint{display:block;font:400 14px var(--sans);color:var(--mut);margin-top:2px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],input[type=email],textarea,select{width:100%;font:16px var(--sans);color:var(--tx);background:#0e131b;border:1px solid #33405a;border-radius:12px;padding:13px 14px;outline:none}
+textarea{min-height:92px;resize:vertical}
+input:focus,textarea:focus,select:focus{border-color:var(--yel);box-shadow:0 0 0 3px rgba(255,209,102,.18)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chipset{display:flex;flex-wrap:wrap;gap:8px}
+.chipset label{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--sans);background:#0e131b;border:1px solid #33405a;border-radius:999px;padding:9px 14px;cursor:pointer;margin:0}
+.chipset input{accent-color:var(--yel);width:17px;height:17px;margin:0}
+.chipset label:has(input:checked){border-color:var(--yel);background:#2a2412}
+.three{display:grid;gap:8px}
+.req{color:var(--ora)}
+.privacy{font-size:14px;color:var(--mut);margin:0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.thanks{display:none;background:linear-gradient(160deg,#12261b,var(--panel));border:1px solid #24503a;border-radius:22px;padding:28px}
+.thanks h3{font-size:26px;color:var(--grn)}
+.sent .thanks{display:block}.sent .qcard{display:none}
+/* about */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center}
+.about .pic{border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.who{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.who img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid var(--blue)}
+.who b{font-size:22px;display:block}.who span{color:var(--mut);font-size:15px}
+.cred{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:8px}
+.cred li{padding-left:22px;position:relative;color:var(--soft)}
+.cred li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--c)}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--mut);font-size:14px}
+footer a{color:var(--soft)}
+/* mobile */
+@media (max-width:900px){.qgrid{grid-template-columns:1fr}.side{position:static;grid-template-columns:repeat(3,1fr)}.grid3{grid-template-columns:1fr 1fr}.prep{grid-template-columns:1fr 1fr}.facts{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:1fr}}
+@media (max-width:640px){
+ body{font-size:16px}section{padding:48px 0}.wrap{padding:0 16px}
+ .hero .bgimg{background-image:url(img/hero-bowler-crowd-900.jpg);background-position:44% 0%;background-size:auto 56%}
+ .hero::after{background:linear-gradient(180deg,rgba(11,11,16,0) 0%,rgba(11,11,16,.2) 30%,rgba(11,11,16,.95) 48%,var(--bg) 62%)}
+ .hero .wrap{padding-top:44vh;padding-bottom:32px}
+ .cta{width:100%;padding:18px 20px}.ghost{margin:6px 0 0}
+ .facts,.two,.pair{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.pair{grid-template-columns:1fr}
+ .facts div:last-child{grid-column:1/-1}
+ .grid3,.prep{grid-template-columns:1fr}
+ .side{grid-template-columns:1fr}
+ .prep div{display:grid;grid-template-columns:36px 1fr;column-gap:12px;padding:14px 16px}.prep .no{grid-row:span 2;margin:0}
+ .row{grid-template-columns:1fr;gap:6px}.row .tm{display:flex;align-items:baseline;gap:10px}.row .tm small{margin:0}
+ .qcard,.thanks,.box{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="bgimg" role="img" aria-label="A crowd in bowler hats; Nick Gushchin looks back through blue glasses"></div>
+  <div class="wrap"><div class="inner">
+    <div class="tag"><span class="dots"><i></i><i></i><i></i><i></i><i></i></span> Participant page · online masterclass</div>
+    <h1>Welcome to <em>AI agents</em> with Claude and ChatGPT</h1>
+    <div class="meta"><span><b>Wed 11 Nov 2026</b></span><span>17:30–20:30 Zurich time</span><span>Online, Zoom</span><span>English</span><span>Host: Nick Gushchin</span></div>
+    <p class="promise">Three hours, built live, and you leave with <mark>your own AI agent running.</mark></p>
+    <div class="ctas">
+      <a class="cta" href="#questionnaire">Fill in the questionnaire <small>(3 minutes)</small></a>
+      <a class="ghost" href="#schedule">See the schedule ↓</a>
+    </div>
+  </div></div>
+</header>
+
+<main>
+<section style="padding-top:28px">
+  <div class="wrap">
+    <div class="facts">
+      <div style="--c:var(--blue)"><b>3 h</b><span>live on Zoom, no coding</span></div>
+      <div style="--c:var(--grn)"><b>60 min</b><span>hands-on, 5 exercises</span></div>
+      <div style="--c:var(--pink)"><b>7 blocks</b><span>from first ideas to your own agent</span></div>
+      <div style="--c:var(--ora)"><b>~10</b><span>people, so there is time for your questions</span></div>
+      <div style="--c:var(--yel)"><b>3 skills</b><span>to take home and keep using</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="topics">
+  <div class="wrap">
+    <p class="kick" style="--c:var(--yel)">What we cover</p>
+    <h2>From how AI thinks to an agent that works for you</h2>
+    <p class="lead">We start with the ideas behind the tools, so the rest makes sense. Then most of the evening is building, on your own account, with your own tasks.</p>
+    <div class="grid3">
+      <div class="topic" style="--c:var(--yel)"><span class="n">01 · What AI is</span><h3>From a formula to GPT</h3><p>How a model learns, from a regression line to a neural net that predicts the next word. A short history from 1956 to today, and the map of models: frontier and open source.</p></div>
+      <div class="topic" style="--c:var(--pink)"><span class="n">02 · From tool to agent</span><h3>What an agent really is</h3><p>Three levels: tool, assistant, agent. What an agent is made of: interface, server, model, data, skills and tools. Real agents, including the one that runs my week.</p></div>
+      <div class="topic" style="--c:var(--grn)"><span class="n">03 · Speaking with AI</span><h3>Prompts, then skills that fix prompts</h3><p>Why ChatGPT behaves the way it does, the five parts of a good prompt, and two skills that improve your prompts and your texts for you.</p></div>
+      <div class="topic" style="--c:var(--pur)"><span class="n">04 · Build your agent</span><h3>Claude or ChatGPT, step by step</h3><p>Where skills, projects and memory live. Then we build: a profile from your CV, your email connected, a morning brief that runs on a schedule.</p></div>
+      <div class="topic" style="--c:var(--ora)"><span class="n">05 · AI in companies</span><h3>How industry adopts it safely</h3><p>What is coming in industry, the AI pyramid, how to test AI tools for risks, and one controlled platform that a whole company can use.</p></div>
+      <div class="topic" style="--c:var(--blue)"><span class="n">06 · Close</span><h3>Use it tomorrow or lose it</h3><p>Agents in daily life, why we forget most of a training within a week, and how to keep yours running. You get the take-home pack.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="takeaways">
+  <div class="wrap">
+    <p class="kick" style="--c:var(--grn)">What you will have after</p>
+    <h2>Working things in your hands, clear ideas in your head</h2>
+    <p class="lead">You do not leave with notes about agents. You leave with one running on your account, and you know how it works.</p>
+    <div class="two">
+      <div class="box prac">
+        <p class="kick" style="--c:var(--grn)">Practical</p>
+        <h3>In your hands</h3>
+        <p class="sub">Built during the session, on your own account</p>
+        <ul class="items">
+          <li style="--c:var(--grn)"><span class="ic">1</span><div><b>Your own AI agent</b><span>Set up in Claude or ChatGPT, on your account, ready the next morning.</span></div></li>
+          <li style="--c:var(--blue)"><span class="ic">2</span><div><b>Your Me.md profile</b><span>Made from your CV, so the agent knows who you are and how you work.</span></div></li>
+          <li style="--c:var(--yel)"><span class="ic">3</span><div><b>Email connected, morning brief on a schedule</b><span>Your agent reads your mail and sends you a short brief every morning.</span></div></li>
+          <li style="--c:var(--pink)"><span class="ic">4</span><div><b>Three take-home skills</b><span>Skill builder, prompt optimizer and write-like-a-human. Install them and use them the next day.</span></div></li>
+        </ul>
+      </div>
+      <div class="box theo">
+        <p class="kick" style="--c:var(--pur)">Theoretical</p>
+        <h3>In your head</h3>
+        <p class="sub">The ideas you need to judge AI at work</p>
+        <ul class="items">
+          <li style="--c:var(--yel)"><span class="ic">A</span><div><b>How AI and GPT work</b><span>What a model learns and why it predicts the next word.</span></div></li>
+          <li style="--c:var(--ora)"><span class="ic">B</span><div><b>The model landscape</b><span>Who makes which models, and how to compare them with public rankings.</span></div></li>
+          <li style="--c:var(--pink)"><span class="ic">C</span><div><b>Tool, assistant, agent</b><span>Three levels, and how to tell which one you are looking at.</span></div></li>
+          <li style="--c:var(--pur)"><span class="ic">D</span><div><b>Agent architecture</b><span>Interface, server, model, data, skills and tools, and how they fit.</span></div></li>
+          <li style="--c:var(--blue)"><span class="ic">E</span><div><b>How companies adopt AI safely</b><span>How to test AI tools for risks before people rely on them.</span></div></li>
+          <li style="--c:var(--grn)"><span class="ic">F</span><div><b>LLM-agnostic thinking</b><span>Build so you can switch models when a better one comes out.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <p class="kick" style="--c:var(--pur)">Schedule · Zurich time</p>
+    <h2>Seven blocks, one third hands-on</h2>
+    <div class="bar" aria-hidden="true"><i style="flex:10;background:var(--blue)"></i><i style="flex:25;background:var(--yel)"></i><i style="flex:20;background:var(--pink)"></i><i style="flex:30;background:var(--grn)"></i><i style="flex:10;background:#555"></i><i style="flex:55;background:var(--pur)"></i><i style="flex:20;background:var(--ora)"></i><i style="flex:10;background:var(--blue)"></i></div>
+    <p class="barlbl">17:30 ─────────────── 180 minutes ─────────────── 20:30</p>
+    <div class="tl">
+      <div class="row" style="--c:var(--blue)"><div class="tm">17:30<small>10 min</small></div><div><h3><span>Open</span>Who I am and what you leave with</h3><p>One agent that runs my week, and the plan for tonight.</p></div></div>
+      <div class="row" style="--c:var(--yel)"><div class="tm">17:40<small>25 min</small></div><div><h3><span>What AI is</span>From a formula to GPT</h3><p>How models learn, a short history, the model map, and the rankings on LM Arena and Artificial Analysis.</p><span class="ex">Exercise 1 · 5 min: one question, two models side by side</span></div></div>
+      <div class="row" style="--c:var(--pink)"><div class="tm">18:05<small>20 min</small></div><div><h3><span>From tool to agent</span>What an agent really is</h3><p>Tool, assistant, agent. The parts of an agent. One agent with scheduled jobs or a fleet of agents. Why LLM-agnostic.</p></div></div>
+      <div class="row" style="--c:var(--grn)"><div class="tm">18:25<small>30 min</small></div><div><h3><span>Speaking with AI</span>Prompts, then skills that fix prompts</h3><p>How ChatGPT was trained, five parts of a good prompt, the prompt optimizer and write-like-a-human skills.</p><span class="ex">Exercise 2 · 15 min: rewrite one real prompt with the optimizer</span></div></div>
+      <div class="row brk"><div class="tm">18:55</div><p>Break · 10 min</p></div>
+      <div class="row" style="--c:var(--pur)"><div class="tm">19:05<small>55 min</small></div><div><h3><span>Build your agent · main block</span>Claude or ChatGPT, step by step</h3><p>Where skills, projects and memory live. Tools and skills. Then you build.</p><span class="ex">Exercise 3 · 10 min: Me.md from your CV</span><span class="ex">Exercise 4 · 20 min: email and morning brief</span><span class="ex">Exercise 5 · 10 min: put it on a schedule</span></div></div>
+      <div class="row" style="--c:var(--ora)"><div class="tm">20:00<small>20 min</small></div><div><h3><span>AI in companies</span>How industry adopts it safely</h3><p>The industry forecast, the AI pyramid, a testing matrix for risks, one company platform for many teams.</p></div></div>
+      <div class="row" style="--c:var(--blue)"><div class="tm">20:20<small>10 min</small></div><div><h3><span>Close</span>Use it tomorrow or lose it</h3><p>Agents in daily life, the take-home pack with three skills, and two short feedback questions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="prepare">
+  <div class="wrap">
+    <p class="kick" style="--c:var(--ora)">Before you join</p>
+    <h2>Five things to have ready</h2>
+    <p class="lead">With these, you build along with me and do not lose time during the exercises.</p>
+    <div class="prep">
+      <div style="--c:var(--yel)"><span class="no">1</span><b>A paid AI account</b><span>Claude Pro (my recommendation) or ChatGPT Plus, about USD 20 per month, cancel any time. A free account stops in the middle of the exercises.</span></div>
+      <div style="--c:var(--blue)"><span class="no">2</span><b>Your CV</b><span>PDF or Word. An old one is fine. It becomes your Me.md profile.</span></div>
+      <div style="--c:var(--grn)"><span class="no">3</span><b>Email access</b><span>Gmail or Outlook, work or private. We connect it for the morning brief.</span></div>
+      <div style="--c:var(--pink)"><span class="no">4</span><b>Three weekly tasks</b><span>Things you do every week that you would like to hand over.</span></div>
+      <div style="--c:var(--pur)"><span class="no">5</span><b>A laptop</b><span>Not a phone. You will use two windows at once: Zoom and your AI account.</span></div>
+    </div>
+    <p class="note">The Zoom link is in the email you got from us on 10 Nov. We start at 17:30 Zurich time.</p>
+  </div>
+</section>
+
+<section id="questionnaire">
+  <div class="wrap">
+    <p class="kick" style="--c:var(--yel)">3 minutes · before the session</p>
+    <h2>Tell me about your work</h2>
+    <p class="lead">I use your answers to pick the examples for tonight, so the exercises fit your job and not someone else's.</p>
+    <div class="qgrid">
+    <div id="qwrap">
+    <div class="qcard">
+      <form id="qf" action="https://formsubmit.co/jai.assistant.nick@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Masterclass 11 Nov questionnaire">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://nickgushchin.github.io/masterclass-11-nov/?sent=1#questionnaire">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="AI tools used" id="toolsjoined">
+        <div class="pair">
+          <div class="f"><label for="q-name">Name <span class="req">*</span></label><input id="q-name" type="text" name="Name" required autocomplete="name"></div>
+          <div class="f"><label for="q-email">Email <span class="req">*</span><span class="hint">The one you used to sign up</span></label><input id="q-email" type="email" name="email" required autocomplete="email"></div>
+        </div>
+        <div class="f"><label for="q-role">Role and industry <span class="req">*</span><span class="hint">For example: CFO, logistics · HR lead, insurance</span></label><input id="q-role" type="text" name="Role and industry" required></div>
+        <fieldset class="f"><legend>Which AI tools do you use today?</legend>
+          <div class="chipset" id="tools">
+            <label><input type="checkbox" value="ChatGPT"> ChatGPT</label>
+            <label><input type="checkbox" value="Claude"> Claude</label>
+            <label><input type="checkbox" value="Microsoft Copilot"> Microsoft Copilot</label>
+            <label><input type="checkbox" value="Gemini"> Gemini</label>
+            <label><input type="checkbox" value="Perplexity"> Perplexity</label>
+            <label><input type="checkbox" value="None yet"> None yet</label>
+          </div>
+        </fieldset>
+        <fieldset class="f"><legend>How often?</legend>
+          <div class="chipset">
+            <label><input type="radio" name="How often" value="Every day"> Every day</label>
+            <label><input type="radio" name="How often" value="A few times a week"> A few times a week</label>
+            <label><input type="radio" name="How often" value="Now and then"> Now and then</label>
+            <label><input type="radio" name="How often" value="Hardly ever"> Hardly ever</label>
+          </div>
+        </fieldset>
+        <div class="f"><label for="q-tools2">Other tools, or what you use them for<span class="hint">Optional</span></label><input id="q-tools2" type="text" name="Other tools and use"></div>
+        <fieldset class="f"><legend>Is your paid Claude or ChatGPT account ready? <span class="req">*</span></legend>
+          <div class="chipset">
+            <label><input type="radio" name="Paid account ready" value="Yes" required> Yes</label>
+            <label><input type="radio" name="Paid account ready" value="Buying today"> Buying today</label>
+            <label><input type="radio" name="Paid account ready" value="Not yet"> Not yet</label>
+          </div>
+          <span class="hint" style="margin:10px 0 6px">Which one?</span>
+          <div class="chipset">
+            <label><input type="radio" name="Which account" value="Claude"> Claude</label>
+            <label><input type="radio" name="Which account" value="ChatGPT"> ChatGPT</label>
+            <label><input type="radio" name="Which account" value="Both"> Both</label>
+            <label><input type="radio" name="Which account" value="Not sure"> Not sure</label>
+          </div>
+        </fieldset>
+        <div class="f"><label for="q-task">Which task would you most like an agent to do for you? <span class="req">*</span></label><textarea id="q-task" name="Task for the agent" required></textarea></div>
+        <fieldset class="f"><legend>Three tasks you repeat every week</legend>
+          <div class="three">
+            <input type="text" name="Weekly task 1" placeholder="1." aria-label="Weekly task 1">
+            <input type="text" name="Weekly task 2" placeholder="2." aria-label="Weekly task 2">
+            <input type="text" name="Weekly task 3" placeholder="3." aria-label="Weekly task 3">
+          </div>
+        </fieldset>
+        <div class="f"><label for="q-q">Your biggest question about AI agents</label><textarea id="q-q" name="Biggest question"></textarea></div>
+        <div class="f"><label for="q-more">Anything else I should know?<span class="hint">Optional: tools your company allows, limits, what you want to get out of tonight</span></label><textarea id="q-more" name="Anything else"></textarea></div>
+        <p class="privacy">Your answers go by email to my assistant's mailbox through FormSubmit (formsubmit.co), a free form service. I use them only to prepare this session. They are not shared or published. Please do not include passwords or confidential company data.</p>
+        <button class="cta" type="submit">Send my answers</button>
+      </form>
+    </div>
+    <div class="thanks" id="thanks">
+      <h3>Thank you, your answers are in.</h3>
+      <p style="color:var(--soft);margin:0 0 6px">I will use them to prepare the examples for tonight. See you at 17:30 Zurich time on Zoom.</p>
+      <p style="color:var(--mut);margin:0">Want to change something? <a href="./#questionnaire" id="again">Send the form again</a>; I will read the latest one.</p>
+    </div>
+    </div>
+    <aside class="side">
+      <div style="--c:var(--yel)"><span class="st">Step 1 · today</span><b>You answer</b><span>Three minutes, in your own words. Short is fine.</span></div>
+      <div style="--c:var(--pink)"><span class="st">Step 2 · before 17:30</span><b>I prepare</b><span>I pick examples and prompts that match your roles and your weekly tasks.</span></div>
+      <div style="--c:var(--grn)"><span class="st">Step 3 · tonight</span><b>You build on your own task</b><span>In the exercises you work on the task you named here.</span></div>
+    </aside>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <p class="kick" style="--c:var(--blue)">Your host</p>
+      <div class="who"><img src="../img/nick.jpg" alt="Nick Gushchin"><div><b>Nick Gushchin</b><span>Applied AI practitioner, Zurich</span></div></div>
+      <ul class="cred">
+        <li style="--c:var(--yel)">18 years in international banking, then a fresh start in AI</li>
+        <li style="--c:var(--grn)">Building with AI since 2023: 20+ AI projects built or co-founded</li>
+        <li style="--c:var(--pink)">AI Transformation Manager in a Swiss industrial group</li>
+        <li style="--c:var(--pur)">Applied AI lecturer at Digicomp Academy</li>
+        <li style="--c:var(--ora)">Founder and host of Head of AI Club Zurich</li>
+      </ul>
+            <div style="margin-top:20px"><a class="cta" href="#questionnaire">Fill in the questionnaire <small>(3 minutes)</small></a></div>
+    </div>
+    <div class="pic"><img src="img/cover-glasses.jpg" alt="Masterclass cover: a crowd in bowler hats, a few people in coloured glasses"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="dots"><i></i><i></i><i></i><i></i><i></i></span>&nbsp; Masterclass: AI agents with Claude and ChatGPT · Wed 11 Nov 2026 · <a href="https://nickgushchin.github.io/">nickgushchin.github.io</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var w=document.getElementById('qwrap');
+  if(/[?&]sent=1/.test(location.search)){w.classList.add('sent');}
+  var again=document.getElementById('again');
+  again.addEventListener('click',function(e){e.preventDefault();w.classList.remove('sent');history.replaceState(null,'',location.pathname+'#questionnaire');});
+  var f=document.getElementById('qf');
+  f.addEventListener('submit',function(){
+    var v=[].map.call(document.querySelectorAll('#tools input:checked'),function(i){return i.value;});
+    document.getElementById('toolsjoined').value=v.join(', ')||'(none ticked)';
+  });
+})();
+</script>
+</body>
+</html>
