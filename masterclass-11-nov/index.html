@@ -46,16 +46,16 @@ h3{font:700 20px/1.25 var(--sans);margin:0 0 6px}
 .meta b{color:var(--yel)}
 .promise{font:700 clamp(20px,2.8vw,28px)/1.25 var(--sans);margin:0 0 26px;max-width:28ch}
 .promise mark{background:none;color:var(--grn)}
-.cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;font:800 clamp(18px,2.3vw,22px)/1.2 var(--sans);color:#0b0b10;background:linear-gradient(90deg,var(--yel),var(--ora));padding:20px 30px;border-radius:16px;box-shadow:0 10px 40px rgba(255,179,71,.28);transition:transform .15s,box-shadow .15s;border:0;cursor:pointer}
-.cta:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(255,179,71,.4)}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;font:800 clamp(18px,2.3vw,22px)/1.2 var(--sans);color:#fff;background:linear-gradient(90deg,#e8364f,#ff4fa0);padding:20px 30px;border-radius:16px;box-shadow:0 10px 40px rgba(232,54,79,.32);transition:transform .15s,box-shadow .15s;border:0;cursor:pointer}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(232,54,79,.45)}
 .cta small{font:600 14px var(--sans);opacity:.75}
-.ghost{display:inline-block;margin-left:14px;color:var(--soft);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line);padding:4px 0}
-.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 4px}
+.ghost{display:inline-flex;align-items:center;justify-content:center;color:#fff;font:700 17px/1.2 var(--sans);text-decoration:none;border:1.5px solid rgba(255,79,160,.65);background:rgba(232,54,79,.08);padding:15px 24px;border-radius:14px}.ghost:hover{background:rgba(232,54,79,.18)}
+.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
 /* facts strip */
 .facts{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:-10px}
 .facts div{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:14px;padding:14px 16px}
 .facts b{display:block;font:800 26px/1.1 var(--sans);color:var(--c)}
-.facts span{font:13px/1.35 var(--mono);color:var(--mut)}
+.facts span{font:14px/1.4 var(--sans);color:var(--mut)}
 /* topics */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .topic{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative;overflow:hidden}
@@ -139,7 +139,7 @@ footer a{color:var(--soft)}
  .hero .bgimg{background-image:url(img/hero-bowler-crowd-900.jpg);background-position:44% 0%;background-size:auto 56%}
  .hero::after{background:linear-gradient(180deg,rgba(11,11,16,0) 0%,rgba(11,11,16,.2) 30%,rgba(11,11,16,.95) 48%,var(--bg) 62%)}
  .hero .wrap{padding-top:44vh;padding-bottom:32px}
- .cta{width:100%;padding:18px 20px}.ghost{margin:6px 0 0}
+ .cta{width:100%;padding:18px 20px}.ghost{width:100%;margin:0}
  .facts,.two,.pair{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.pair{grid-template-columns:1fr}
  .facts div:last-child{grid-column:1/-1}
  .grid3,.prep{grid-template-columns:1fr}
@@ -157,11 +157,12 @@ footer a{color:var(--soft)}
   <div class="wrap"><div class="inner">
     <div class="tag"><span class="dots"><i></i><i></i><i></i><i></i><i></i></span> Participant page · online masterclass</div>
     <h1>Welcome to <em>AI agents</em> with Claude and ChatGPT</h1>
-    <div class="meta"><span><b>Wed 11 Nov 2026</b></span><span>17:30–20:30 Zurich time</span><span>Online, Zoom</span><span>English</span><span>Host: Nick Gushchin</span></div>
+    <div class="meta"><span><b>Wed 11 Nov 2026</b></span><span>17:30–20:30 Zurich time</span><span>Host: Nick Gushchin</span></div>
     <p class="promise">Three hours, built live, and you leave with <mark>your own AI agent running.</mark></p>
     <div class="ctas">
       <a class="cta" href="#questionnaire">Fill in the questionnaire <small>(3 minutes)</small></a>
-      <a class="ghost" href="#schedule">See the schedule ↓</a>
+      <a class="ghost" href="#prepare">5 things to have ready</a>
+      <a class="ghost" href="#schedule">Schedule</a>
     </div>
   </div></div>
 </header>
