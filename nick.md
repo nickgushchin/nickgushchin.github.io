@@ -32,4 +32,4 @@ LinkedIn: https://www.linkedin.com/in/nickgushchin/
 
 - Oct 2025: GICP written interview, "How AI is changing workflows, underwriting and risk in credit": https://gicp.org/careers/rewriting-of-credit-work/
 - Nov 2024: Tech.eu interview by Cate Lawrence, "Unlocking the power of manufacturing data with CloEE", with co-founder Julia Sabitova and Nick as Chief AI Advisor (AI digital advisor for discrete manufacturing, its AI architecture). https://tech.eu/2024/11/20/unlocking-the-power-of-manufacturing-data-with-cloee/
-- My class as vectors: classroom experiment from ETH Zurich AI in Industry (Nov 2026). 55 of the 74 people in Nick's CAS class turned into vectors of 35 parameters from public information and compared pairwise with the inner product; published as an anonymised, searchable heatmap (classmates as P01–P54) with method and disclaimers. https://nickgushchin.github.io/eth-class-matrix/
+- My class as vectors: anonymised ETH class similarity matrix. https://nickgushchin.github.io/eth-class-matrix/
